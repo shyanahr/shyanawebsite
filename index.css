@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Note: HTML and Body styles are handled by Tailwind's base reset.
-   Custom global overrides have been removed to ensure build stability.
-*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
