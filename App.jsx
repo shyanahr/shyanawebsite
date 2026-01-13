@@ -284,4 +284,123 @@ function App() {
       {/* Call to Action / Downloads */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6
+          <h2 className="text-3xl font-bold mb-6">Ready to upskill your workforce?</h2>
+          <p className="text-blue-100 mb-10 max-w-2xl mx-auto">
+            Download our complete company profile or the specialized ICE Exam Preparation Brochure to see how we can help.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
+              <BookOpen size={20} /> Download Profile
+            </button>
+            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
+              <Wrench size={20} /> ICE Exam Brochure
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-800 mb-6">Get In Touch</h2>
+              <p className="text-slate-600 mb-8">
+                Whether you need a full HR audit or specific technical training for your fleet team, we are here to help.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-full text-blue-600 mt-1">
+                    <MapPin size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-800">Our Office</h3>
+                    <p className="text-slate-600">L-07-01, Level 7, Block L, Solaris Mont Kiara,<br/>No 2 Jalan Solaris, 50480 Kuala Lumpur, Malaysia.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-full text-blue-600 mt-1">
+                    <Phone size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-800">Call Us</h3>
+                    <p className="text-slate-600">03-6200 0670</p>
+                    <p className="text-slate-500 text-sm">Fax: 03-6200-0699</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-full text-blue-600 mt-1">
+                    <Mail size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-800">Email</h3>
+                    <p className="text-slate-600">support@shyanahr.com.my</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form className="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-200">
+              <div className="grid gap-6">
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
+                  <input type="text" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none" placeholder="John Doe" />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
+                  <input type="text" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none" placeholder="Your Organization" />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Service Required</label>
+                  <select className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none text-slate-600">
+                    <option>General Inquiry</option>
+                    <option>HR Consulting</option>
+                    <option>Training: Fleet/ICE Management</option>
+                    <option>Training: Leadership & Soft Skills</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                  <textarea rows="4" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none" placeholder="How can we help you?"></textarea>
+                </div>
+                <button className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-colors">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-sm">
+            © 2013-{new Date().getFullYear()} Shyana HR Consulting & Training Sdn Bhd (1053568-X).<br/>All Rights Reserved.
+          </div>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+
+      {/* WhatsApp Float */}
+      <a 
+        href="https://wa.me/60362000670" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform hover:scale-110 z-50 flex items-center justify-center"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle size={24} fill="currentColor" />
+      </a>
+
+    </div>
+  );
+}
+
+export default App;
